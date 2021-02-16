@@ -1,0 +1,89 @@
+<div class="bg-secondary">
+  <div class="baniere bg-secondary ml-auto mr-auto">
+    <div class="baniere-title text-white">
+      <h1>VINYLS-COLLECTION</h1>
+    </div>
+    <div class="baniere-detail text-center d-flex flex-column flex-lg-row align-items-center justify-content-around">
+      <h4>Gérez votre collection en ligne</h4>
+      <button class="btn btn-light mb-3">
+        Je m'inscris gratuitement
+      </button>
+    </div>
+    <img
+      [src]="baniere"
+      class="baniere-detail-vinyls-img mt-lg-3 d-none d-lg-block"
+      alt="Vinyls-Collection"
+    />
+    <div class="baniere-detail-vinyls d-none d-lg-block">
+      <h3 class="text-white font-weight-bold">Emily JANE WHITE</h3>
+      <h4 class="text-black-50 font-weight-bold">DARK UNDERCOAT</h4>
+    </div>
+  </div>
+</div>
+<div class="bg-dark text-center py-2 text-white font-weight-light d-none d-lg-block">
+  Les chiffres du site actualisés toutes les 15 minutes : 4950 membres -
+  580 658 disques - 10 424 collections
+</div>
+
+<!--/* main bloc page */-->
+
+<div class="main_index">
+  <div class="right_index">
+    <h3>DERNIERES INSCRIPTIONS</h3>
+    <hr/>
+    <div class="img_profil_index">
+      <img class="" src="http://placehold.it/100x100" alt="profil" />
+      <img class="" src="http://placehold.it/100x100" alt="profil" />
+      <img class="" src="http://placehold.it/50x50" alt="profil" />
+      <img class="" src="http://placehold.it/100x100" alt="profil" />
+      <img class="" src="http://placehold.it/100x100" alt="profil" />
+    </div>
+
+    <h3>DERNIERES DISCUSSIONS DU FORUM</h3>
+    <hr/>
+    <div class='msg_forum_index'>
+      <div *ngFor="let post of lastPost">
+        <div class="post_forum_index">
+          <h5>16/07 - 22h42</h5>
+          <p>lolivejazz a posté un messsage sur vivement les brocs !!!</p>
+        </div>
+      </div>
+      <div>
+        <img
+          [src]="undevDev"
+          alt="En développement"
+          width=300}
+          height=200}
+        />
+      </div>
+    </div>
+  </div>
+  <div class='left_index'>
+    <h3>DERNIERS DISQUES AJOUTES</h3>
+    <hr/>
+    <div>
+      <img src="http://placehold.it/75x75" alt="image disque" />
+      <div>
+        <p>Mean Green Mother From Outer Space</p>
+        <p>Levi Stubbs And Chorus</p>
+        <p>(paddyrock - 16/07 20:16)</p>
+      </div>
+    </div>
+    <div>
+      <img src="http://placehold.it/75x75" alt="image disque" />
+      <div>
+        <p>Mean Green Mother From Outer Space</p>
+        <p>Levi Stubbs And Chorus</p>
+        <p>(paddyrock - 16/07 20:16)</p>
+      </div>
+    </div>
+    <div>
+      <img src="http://placehold.it/75x75" alt="image disque" />
+      <div>
+        <p>Mean Green Mother From Outer Space</p>
+        <p>Levi Stubbs And Chorus</p>
+        <p>(paddyrock - 16/07 20:16)</p>
+      </div>
+    </div>
+  </div>
+</div>
